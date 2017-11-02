@@ -1,7 +1,7 @@
 /* RFM69 Driver for Gadgeteer Mainboards
 // NETMF 4.3, GHI SDK 2016 R1
 // **********************************************************************************
-// Copyright RoSchmi December 2016
+// Copyright RoSchmi January 2017, Version 1.1
 // 
 // **********************************************************************************
 // This is an adaption of Felix Rusu - felix@lowpowerlab.com RFM69 library for arduino 
@@ -2140,11 +2140,11 @@ const byte RF_DAGC_IMPROVED_LOWBETA0   = 0x30;  // Recommended default
         {
             get { return this._recipientID; }
             set { this._recipientID = value; }
-        }
+        }     
         public byte Retries
         {
-            get { return this._recipientID; }
-            set { this._recipientID = value; }
+            get { return this._retries; }
+            set { this._retries = value; }
         }
         public short WaitForACK_Time_MS
         {

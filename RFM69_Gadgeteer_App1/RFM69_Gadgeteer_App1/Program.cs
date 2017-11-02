@@ -1,4 +1,4 @@
-﻿// Copyright RoSchmi Version 1.0, Date 12.12.2016
+﻿// Copyright RoSchmi Version 1.1, Date 06.01.2017
 // NETMF 4.3 GHI SDK 2016 R1
 // Compiled on Visual Studio 2013 (VS 2015 doesn't support Gadgeteer)
 // This is an example how NETMF Gadgeteer Mainboards can receive and transmit data using the RFM69 radio

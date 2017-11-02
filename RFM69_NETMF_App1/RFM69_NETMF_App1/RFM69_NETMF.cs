@@ -1,7 +1,7 @@
 /* RFM69 Driver for NETMF Mainboards
 // NETMF 4.3, GHI SDK 2016 R1
 // **********************************************************************************
-// Copyright RoSchmi December 2016
+// Copyright RoSchmi January 2017, Version 1.1
 // 
 // **********************************************************************************
 // This is an adaption of Felix Rusu - felix@lowpowerlab.com RFM69 library for arduino 
@@ -43,7 +43,7 @@
 // **********************************************************************************/
 
 
-// Outcomment "#define DebugPrint" when the debugger is not connected!!!, otherwise the program will eventually not work properly!
+// Comment inactive "#define DebugPrint" when the debugger is not connected!!!, otherwise the program will eventually not work properly!
 //#define DebugPrint
 
 using System;
@@ -57,7 +57,7 @@ namespace RFM69_NETMF_App1
     public class RFM69_NETMF
     {
         #region RFM69 Registers and Definitions
-        // Not all of this stuff is needed and much can be deleted if space is critical
+        // Not all of this stuff is needed and can be commented out to save memory space
 
         #region RFM69 Registers
         const byte REG_FIFO = 0x00;
@@ -98,6 +98,7 @@ namespace RFM69_NETMF_App1
         const byte REG_RSSICONFIG = 0x23;
         const byte REG_RSSIVALUE = 0x24;
         const byte REG_DIOMAPPING1 = 0x25;
+        
         const byte REG_DIOMAPPING2 = 0x26;
         const byte REG_IRQFLAGS1 = 0x27;
         const byte REG_IRQFLAGS2 = 0x28;
@@ -144,7 +145,6 @@ namespace RFM69_NETMF_App1
         const byte REG_TESTPA1 = 0x5A;  // only present on RFM69HW/SX1231H
         const byte REG_TESTPA2 = 0x5C;  // only present on RFM69HW/SX1231H
         const byte REG_TESTDAGC = 0x6F;
-
         #endregion
         //******************************************************;
         // RF69/SX1231 bit control definition
@@ -2119,8 +2119,8 @@ namespace RFM69_NETMF_App1
             }
             public byte Retries
             {
-                get { return this._recipientID; }
-                set { this._recipientID = value; }
+                get { return this._retries; }
+                set { this._retries = value; }
             }
             public short WaitForACK_Time_MS
             {
