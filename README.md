@@ -21,9 +21,9 @@ Programming requirements
 
 Visual Studio 2013 Community , Microsoft .NET Microframework 4.3 (QFE2), Microsoft
 .NET Gadgeteer Core,  GHI Electronics
-NETMF SDK 2016 R1 (see: https://www.ghielectronics.com/support/netmf )
+NETMF SDK 2016 R1 (see: https://old.ghielectronics.com/support/netmf )
 
 Discussions
 
 Search
-for the project in the GHI Community Forum under Codeshare ( https://www.ghielectronics.com/community/forum )
+for the project in the GHI Community Forum under Codeshare ( https://old.ghielectronics.com/community/forum )
